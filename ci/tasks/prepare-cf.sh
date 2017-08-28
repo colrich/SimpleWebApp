@@ -77,8 +77,8 @@ if [ -z "$packaging" ]; then
   error_and_exit "missing packaging!"
 fi
 
-inputWar=`find $inputDir -name '*.war'`
-outputWar="${outputDir}/${baseName}.war"
+inputWar=`find $inputDir -name '*.jar'`
+outputWar="${outputDir}/${baseName}.jar"
 #WAR
 echo "Renaming ${inputWar} to ${outputWar}"
 cp ${inputWar} ${outputWar}
@@ -89,7 +89,7 @@ outputManifest=$outputDir/manifest.yml
 cp $inputManifest $outputManifest
 echo $hostname
 # the path in the manifest is always relative to the manifest itself
-sed -i -- "s|path: .*$|path: ${baseName}.war|g" $outputManifest
+sed -i -- "s|path: .*$|path: ${baseName}.jar|g" $outputManifest
 sed -i "s|host: .*$|host: $hostname|g" $outputManifest
 
 cat $outputManifest
