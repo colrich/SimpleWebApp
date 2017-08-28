@@ -25,5 +25,5 @@ run:
     --output-dir, build,
     --version-file, version/number,
     --artifactId, pcf-demo,
-    --packaging, war
+    --packaging, jar
   ]
