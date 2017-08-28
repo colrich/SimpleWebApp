@@ -1,0 +1,7 @@
+---
+applications:
+- name: pcfdemo-swa
+  memory: 1G
+  instances: 1
+  path: ./target/pcfdemo.jar
+  host: changeme
