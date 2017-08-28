@@ -1,5 +1,5 @@
 properties.yml
-
+!.mvn/wrapper/*.jar
 
 # Compiled class file
 *.class
