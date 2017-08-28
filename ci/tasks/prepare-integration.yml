@@ -26,5 +26,5 @@ run:
     --version-file, version/number,
     --input-manifest, pcfdemo/manifest.yml,
     --artifactId, pcf-demo,
-    --packaging, war
+    --packaging, jar
   ]

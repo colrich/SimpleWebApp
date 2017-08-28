@@ -74,8 +74,8 @@ if [ -z "$packaging" ]; then
   error_and_exit "missing packaging!"
 fi
 
-inputWar=`find $inputDir -name '*.war'`
-outputWar="${outputDir}/${baseName}.war"
+inputWar=`find $inputDir -name '*.jar'`
+outputWar="${outputDir}/${baseName}.jar"
 
 echo "Renaming ${inputWar} to ${outputWar}"
 
