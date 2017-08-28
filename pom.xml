@@ -5,7 +5,7 @@
 
 	<groupId>io.pivotal.demo</groupId>
 	<artifactId>pcf-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-rc.1</version>
 	<packaging>jar</packaging>
 
 	<name>pcf-demo</name>
