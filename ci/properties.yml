@@ -1,0 +1,28 @@
+github-uri:
+github-branch: master
+s3-access-key-id:
+s3-secret-access-key:
+s3-endpoint:
+s3-bucket-version: pcfdemo-releases  # Create and change this to your own S3 bucket
+s3-bucket-releases: pcfdemo-releases  # Create and change this to your own S3 bucket
+s3-bucket-release-candidates: pcfdemo-releases-candidates  # Create and change this to your own S3 bucket
+maven-opts: # -Xms256m -Xmx512m
+maven-config: # -s path/to/settings.xml
+cf-api:
+cf-username:
+cf-password:
+cf-org:
+cf-space:
+cf-manifest-host:
+cf-api-aws:
+cf-username-aws:
+cf-password-aws:
+cf-org-aws:
+cf-space-aws:
+cf-manifest-host-prod-aws:
+cf-api-gcp:
+cf-username-gcp:
+cf-password-gcp:
+cf-org-gcp:
+cf-space-gcp:
+cf-manifest-host-prod-gcp:

@@ -1,0 +1,30 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: java
+    tag: '8'
+
+params:
+  CF_MANIFEST_HOST_GCP:
+
+inputs:
+  - name: pcfdemo
+  - name: candidate-release
+  - name: version
+
+outputs:
+  - name: prepare-gcp
+
+run:
+  path: pcfdemo/ci/tasks/prepare-gcp.sh
+  args: [
+    --input-dir, candidate-release,
+    --output-dir, prepare-gcp,
+    --version-file, version/number,
+    --input-manifest, pcfdemo/manifest.yml,
+    --artifactId, pcf-demo,
+    --packaging, war
+  ]
